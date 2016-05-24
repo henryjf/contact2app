@@ -1,6 +1,6 @@
-function config () {
+function config ($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvide.otherwise('/');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('list', {
@@ -19,5 +19,5 @@ function config () {
       controller: 'SingleController'
     })
 }
-
+config.$inject = ['$stateProvider', '$urlRouterProvider']
 export { config };
