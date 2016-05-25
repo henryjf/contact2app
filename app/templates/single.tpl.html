@@ -1,0 +1,16 @@
+<h2 class="title">Single Contact</h2>
+<a href="/#/list/" class="box" ng-repeat="c in allContacts">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <ul>
+          <p class="listName">{{c.name}}</p>
+          <li>{{c.email}}</li>
+          <li>{{c.phone}}</li>
+          <li>{{c.location}}</li>
+          <li>{{c.image}}</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</a>

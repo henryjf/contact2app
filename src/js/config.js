@@ -9,12 +9,12 @@ function config ($stateProvider, $urlRouterProvider) {
       controller: 'ListController'
     })
     .state('add', {
-      url: './add',
+      url: '/add',
       templateUrl: 'templates/add.tpl.html',
       controller: 'AddController'
     })
     .state('single', {
-      url: './single',
+      url: '/single/:itemId',
       templateUrl: 'templates/single.tpl.html',
       controller: 'SingleController'
     })

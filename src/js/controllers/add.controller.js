@@ -8,8 +8,6 @@ function AddController ($scope, $http, URL, $state) {
           $state.go('list');
       });
     }
-
-
 }
 
 AddController.$inject = ['$scope', '$http', 'URL', '$state'];
