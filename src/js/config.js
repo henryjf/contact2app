@@ -2,6 +2,7 @@ function config ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 
+//routes for each page and which controller is attached 
   $stateProvider
     .state('list', {
       url: '/',
