@@ -3,4 +3,15 @@
 .container {
   width: 500px;
   margin: 25px auto;
+
+  .list_images {
+    width: 80px;
+    border-radius: 50%;
+  }
+  .singleContact {
+    padding: 15px;
+    width: 160px;
+    border-radius: 50%;
+
+  }
 }
