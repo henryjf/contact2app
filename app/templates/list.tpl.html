@@ -1,32 +1,14 @@
 <h2 class="title">Me Cohort</h2>
 
-
-<a href="/#/single/">
-<div class="card is-fullwidth">
-  <header class="card-header">
-    <p class="card-header-title">{{ singleContact.name }}</p>
-  </header>
-  <div class="card-content">
-    <div class="content">{{ singleContact.name }}</div>
-
-    <!-- <footer class="card-footer">
-    <a class="card-footer-item" ng-click="deleteContact(singleContact._id)">Delete</a>
-  </footer> -->
-  </div>
-</a>
-
-
-
-
-
-<!-- <a href="/#/single/" class="box" ng-repeat="c in allContacts">
+<a href="/#/single/{{n._id}}" class="box" ng-repeat="n in allContacts">
   <article class="media">
-    <div class="media-content">
-      <div class="content">
-        <ul>
-          <p class="listName">{{c.name}}</p>
-        </ul>
-      </div>
-    </div>
-  </article>
-</a>  -->
+     <div class="media-content">
+       <div class="content">
+         <p>
+           <strong>{{ n.name }}</strong>
+         </p>
+       </div>
+     </div>
+   </article>
+
+</a>

@@ -1,16 +1,13 @@
-function ListController($scope, $http, URL, $stateParams, $state) {
+function ListController($scope, $http, URL) {
+
+    init();
 
   function init() {
-    $http.get(URL + $stateParams.contactId).then ( (res) =>{
+    $http.get(URL).then ( (res) =>{
       $scope.allContacts= res.data;
     });
   }
 
-  // $scope.deleteContact = function (contactId) {
-  //   $http.delete(URL + contactId).then( (res) => {
-  //     $state.go('single');
-  //   });
-  // }
 }
-ListController.$inject = [ '$scope', '$http', 'URL', '$stateParams', '$state']
+ListController.$inject = ['$scope', '$http', 'URL']
 export { ListController };

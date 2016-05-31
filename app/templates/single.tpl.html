@@ -1,6 +1,24 @@
 <h2 class="title">Single Contact</h2>
-<a href="/#/list/" class="box" ng-repeat="c in allContacts">
-  <article class="media">
+
+<div class="card is-fullwidth">
+
+    <img class="singleContact" ng-src="{{ singleContact.url }}">
+
+    <div class="card-content">
+    <div class="content">{{ singleContact.name }}</div>
+    <div class="content">{{ singleContact.email }}</div>
+    <div class="content">{{ singleContact.phone }}</div>
+    <div class="content">{{ singleContact.location }}</div>
+  </div>
+
+  <footer class="card-footer">
+    <a class="card-footer-item" ng-click="deleteContact(singleContact._id)">Delete</a>
+  </footer>
+</div>
+
+
+<!-- <a href="/#/list/" class="box" ng-repeat="c in allContacts"> -->
+  <!-- <article class="media">
     <div class="media-content">
       <div class="content">
         <ul>
@@ -12,5 +30,5 @@
         </ul>
       </div>
     </div>
-  </article>
-</a>
+  </article> -->
+<!-- </a> -->

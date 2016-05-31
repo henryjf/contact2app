@@ -14,7 +14,7 @@ function config ($stateProvider, $urlRouterProvider) {
       controller: 'AddController'
     })
     .state('single', {
-      url: '/single/:itemId',
+      url: '/single/:contactId',
       templateUrl: 'templates/single.tpl.html',
       controller: 'SingleController'
     })

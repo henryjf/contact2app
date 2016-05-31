@@ -8,15 +8,15 @@ import { AddController } from './controllers/add.controller';
 
 //import config
 import { config } from './config';
-
-const url = 'https://secret-forest-21470.herokuapp.com/collections/3r45tf/';
+//assign url to a constant
+const url = 'https://secret-forest-21470.herokuapp.com/collections/345ertsdf/';
 
 angular
-  .module('app', ['ui.router'])
+  .module('app', ['ui.router'])//module setter (register)
 
   .config(config)//register configuration
 
-  .constant('URL', url)
+  .constant('URL', url)//app URL constant
 
 //register controllers
 .controller('ListController', ListController)
